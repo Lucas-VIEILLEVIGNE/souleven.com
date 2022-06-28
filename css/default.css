@@ -1,0 +1,31 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+
+.light-mode {
+    --main-color: #6D0C9D;   
+    --main-bg-color: #C9CDFF;
+    --main-bg-img : url(sources/logo\ lulu\ panneau\ black.png);
+    --background-img : url(sources/low-poly-house-light.png);
+}
+
+.dark-mode {
+    --main-color: white;
+    --main-bg-color: #2E2760;
+    --main-bg-img : url(sources/logo\ lulu\ panneau\ white.png);
+    --background-img :url(sources/low-poly-house.png);
+}
+
+:root {
+    --main-color: #6D0C9D;
+    --main-bg-color: #C9CDFF;
+    --main-bg-img : url(sources/logo\ lulu\ panneau\ black.png);
+    --background-img : url(sources/low-poly-house-light.png);
+}
+
+body.dark-mode{
+  color: white!important;
+  background-color: #2E2760;
+}

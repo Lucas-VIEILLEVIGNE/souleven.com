@@ -1,0 +1,305 @@
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-image: var(--background-img);
+    background-color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.main-content h1{
+    background-color:var(--main-bg-color);
+    color :  var(--main-color);
+    position: relative;
+    font-size: 3.5em;
+    padding: 0.3em 0em 1em 0em;
+    top: 5em;
+    width: 10em;
+    height: 1em;
+    box-shadow: 0px 7px 20px black;
+}   
+
+
+/* Nav-bar */
+
+.fa-brands{
+    color: var(--main-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Logo Style */
+.nav-logo{
+    position: relative;
+}
+.logo{
+    margin-top: 0.2em;
+    margin-left: 0.5em;
+    height: 3em;
+    z-index: 1;
+
+}
+
+/* Basic Style */
+body {
+    font-size:var(--font-size);
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* box-shadow: 0px 3px 20px #1e1a41; */
+    height: 75px;
+    padding: 0px;
+    color: var(--main-color);
+    background: var(--main-bg-color);
+}
+.navbar-links {
+    display: flex;
+}
+
+.lien{
+    position: relative;
+    top: 0.4em;
+}
+
+.rsx{
+    font-size: 1.3em;
+}
+
+.navbar-link {
+    padding: 0 50px;
+}
+.navbar-link > a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+.burger {
+    display: none;
+}
+
+/* Small Devices */
+@media screen and (max-width:767.98px) {
+    
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 0;
+        height: calc(100vh - 65px);
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: var(--main-bg-color);
+        transition: all .4s ease-in-out;
+    }
+    .show-nav .navbar-links {
+    width: 100%;
+    }
+    .navbar-link {
+        transform: translateX(101%);
+    }
+    .show-nav .navbar-link {
+        transform: translateX(0);
+    }
+    .navbar-link > a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.6rem;
+        transition:all .4s ease-in-out;
+    }
+    .navbar-link > a:hover {
+            padding: 2rem;
+            letter-spacing: 5px;
+    }
+
+
+
+/* Toggle menu */
+    .burger {
+        display: block;
+        position: relative;
+        right: 1em;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 45px;
+        height: 4px;
+        background: var(--main-color);
+        border-radius: 3px;
+        transition: all .4s ease-in-out;
+    }
+    .show-nav .bar {
+        width: 0;
+        background: transparent;
+    }
+    .bar::before, .bar::after {
+        content: "";
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: var(--main-color);
+        border-radius: 3px;
+        transition: all .4s ease-in-out;
+    }
+    .bar::before {
+        transform:translateY(-12px);
+    }
+    .show-nav .bar::before {
+        transform: rotate(45deg);
+    }
+    .bar::after {
+        transform:translateY(12px);
+    }
+    .show-nav .bar::after {
+        transform: rotate(-45deg);
+    }
+
+
+/* Animations */
+    .show-nav .first {
+        transition: all 1s ease-out;
+    }
+    .show-nav .second {
+        transition: all 1.2s ease-out;
+    }
+    .show-nav .third {
+        transition: all 1.3s ease-out;
+    }
+    .show-nav .fourth {
+        transition: all 1.4s ease-out;
+    }
+    .show-nav .fifth {
+        transition: all 1.5s ease-out;
+    }
+    .show-nav .six {
+        transition: all 1.5s ease-out;
+    }
+}
+
+/* Medium devices */
+@media screen and (min-width:768px){
+    .navbar-link > a:after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 1px;
+        background:var(--main-color);
+        transition:width .4s;
+    }
+    .navbar-link:hover > a:after {
+        width: 100%;
+    }
+}
+
+/* Bouton Style */
+a{
+    text-decoration: none;
+  }
+  
+  .bubbly-button {
+    font-family: 'League Spartan', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ff0081;
+    color: #fff;
+    border-radius: 150px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 15em;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  }
+  .bubbly-button:focus {
+    outline: 0;
+  }
+  .bubbly-button:before, .bubbly-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat; 
+  }
+  .bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+  .bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+  .bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #e60074;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  .bubbly-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  .bubbly-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+  
+  
+  /* Animation */
+  
+  @keyframes topBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+   }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+   }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+   }
+  }
+  @keyframes bottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+   }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+   }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+   }
+  }
