@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souleven - Contact</title>
+</head>
+<body>
+
+    <section class="contact container" id="contact">
+
+        <h2 class="heading"> Contacte moi !  </h2>
+
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Votre nom" class="name" required>
+            <input type="email" name="" id="" placeholder="Adresse Email" class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message" class="message" required></textarea>
+            <input type="submit" value="Envoyer" class="send-btn">
+        </form>
+
+    </section>
+
+    <!-- EmailJs -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() 
+        {
+            emailjs.init('chU_XJgeoaJFfBS9a');
+        })();
+    </script>
+
+    <!-- Sweet Alert JS -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Script JS  -->
+
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>
