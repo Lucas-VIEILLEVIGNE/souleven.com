@@ -23,7 +23,6 @@ box-sizing: border-box;
   left: 50%;
   width: 150vh;
   height: 80vh;
-  padding: 0px 0px 0px 40 px;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
@@ -165,9 +164,9 @@ select,
 .box .contact .prenom input{
   width: 100%;
   padding: 10px 0px;
-  font-size: 16px;
+  font-size: 1em;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.35em;
   border: none;
   border-bottom: 3px solid #fff;
   outline: none;
@@ -177,9 +176,9 @@ select,
 .box .contact .email input {
   width: 100%;
   padding: 10px 0px;
-  font-size: 16px;
+  font-size: 1em;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.35em;
   border: none;
   border-bottom: 3px solid #fff;
   outline: none;
@@ -189,9 +188,9 @@ select,
 .box .contact .phone input {
   width: 40%;
   padding: 10px 0px;
-  font-size: 16px;
+  font-size: 0.75em;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.35em;
   border: none;
   border-bottom: 3px solid #fff;
   outline: none;
@@ -202,7 +201,7 @@ select,
 .box .contact .message textarea{
   resize: none;
   background: transparent;
-  font-size: 16px;
+  font-size: 0.75em;
   box-sizing: border-box;
   border: 3px white solid;
   border-radius: 4px;
@@ -212,20 +211,8 @@ select,
 .box .contact label {
   position: relative;
   bottom:3.5em;
-  left: 0;
   padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: .5s;
-}
-
-.box .contact .phone label {
-  position: relative;
-  bottom:3.5em;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
+  font-size: 0.75em;
   color: #fff;
   pointer-events: none;
   transition: .5s;
@@ -235,11 +222,11 @@ select,
   cursor: pointer;
   position: relative;
   background: transparent;
-  left: 40%;
+  left: 25vh;
   display: inline-block;
   padding: 10px 20px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 0.75em;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -274,7 +261,6 @@ box-shadow: 0 0 5px #03e9f4,
 
 /* Right Style */
 .right{
-  flex: 1;
   background-image: url(/Sources/contact.png);
   background-size: contain;
   background-repeat: no-repeat;
