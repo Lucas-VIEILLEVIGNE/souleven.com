@@ -2,8 +2,11 @@
 
 function validate()
 {
+    let subject = document.querySelector('.subject')
     let name = document.querySelector('.name');
+    let lastName = document.querySelector('.lastName');
     let email = document.querySelector('.email');
+    let phone = document.querySelector('.phone');
     let msg = document.querySelector('.message');
     let sendBtn = document.querySelector('.send-btn');
 
@@ -11,13 +14,13 @@ function validate()
 
         e.preventDefault();
 
-        if(name.value == "" || email.value == ""|| msg == "")
+        if(subject.value == "default" ||name.value == "" || lastName.value == "" || email.value == ""|| phone.value == "" || msg == "")
         {
             emptyerror();
         }
         else
         {
-            sendmail(name.value, email.value, msg.value);
+            sendmail(subject.value, name.value, lastName.value, email.value, phone.value, msg.value);
             success();
         }
 
@@ -28,12 +31,15 @@ validate();
 
 /* Sweet Alert */
 
-function sendmail(name,email,msg)
+function sendmail(subject,name,lastName,email,phone,msg)
 {
 
     emailjs.send("service_fqie3wc","template_jjgb2lg",
     {
+        sujet: subject,
+        phone: phone,
         to_name: name,
+        lastname: lastName,
         from_name: email,
         message: msg
     });

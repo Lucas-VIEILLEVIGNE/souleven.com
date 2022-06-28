@@ -5,22 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Souleven - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/png" href="Sources/Illustration_sans_titre.png" alt="favicon logo lucas vieillevigne">
+    <link rel="stylesheet" href="/css/contact-style.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/style-nav.css"> -->
 </head>
-<body>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar" role="navigation">
+            <div class="nav-logo">
+                    <a href="index.html"><img class="logo" src="/Sources/Illustration_sans_titre.png" alt="Logo Lucas Vieillevigne représenté en dessin qui dessine sur une tablette graphique"></a>
+            </div>          
+            <ul class="navbar-links">
+                <li class="navbar-link first lien"><a href="explore.html">EXPLORE</a></li>
+                <li class="navbar-link second lien"><a href="portfolio.html">PORTFOLIO</a></li>
+                <li class="navbar-link third lien"><a href="about.html">ABOUT ME</a></li>
+                <li class="navbar-link fourth lien"><a href="contact.html">CONTACT</a></li>
+                <li class="navbar-link fifth rsx"><a href="https://www.instagram.com/souleven_/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="navbar-link six rsx"><a href="https://www.linkedin.com/in/lucas-vieillevigne/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
 
-    <section class="contact container" id="contact">
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
+        </nav>        
+    </header>
+    
+    <div class="box">
+        <div class="left">
+                <div class="h1-left">
+                    <h1>
+                        CONTACTEZ MOI !
+                    </h1>
+                </div>
 
-        <h2 class="heading"> Contacte moi !  </h2>
-
-        <form action="" class="contact-form" id="contact-form">
-            <input type="text" placeholder="Votre nom" class="name" required>
-            <input type="email" name="" id="" placeholder="Adresse Email" class="email" required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message" class="message" required></textarea>
-            <input type="submit" value="Envoyer" class="send-btn">
-        </form>
-
-    </section>
-
+                <form action="" class="contact" id="contact">
+                    <div class="select">
+                        <span class="focus"></span>
+                        <select id="standard-select" placeholder="Sujet" name="sujet" class="subject">
+                            <option value="default">Sujet</option>
+                            <option value="Projet Design">Projet Design</option>
+                            <option value="Projet Dev">Projet Dev-web</option>
+                            <option value="Contact">Prise de contact</option>
+                            <option value="Autre">Autres demandes</option>
+                        </select>
+                    </div>  
+                    <div class="identite">
+                        <div class="prenom"><input type="text" name="first-name" class="name" required=""/>
+                            <label>Prénom</label>
+                        </div>
+                        <div class="nom"><input type="text" name="last-name" class="lastName" required=""/>
+                            <label>Nom</label>
+                        </div>
+                    </div>
+                    <div class="email"><input type="email" name="email" class="email" required><label>Email</label>
+                    </div>
+                    <div class="phone"><input type="tel"name="phone" placeholder="Téléphone (optionnel)" />
+                    </div>
+                    <div class="message"><textarea name="message" placeholder="Votre Message" class="message" required></textarea><label></label>
+                    </div>
+                    <div class="btn-contact">
+                        <input type="submit" name="button" value="Envoyer" class="send-btn">
+                    </div>
+                </form>
+        </div>
+    </div>
+    <div class="right"></div>
+    
+    
     <!-- EmailJs -->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -41,3 +95,4 @@
     
 </body>
 </html>
+                   
