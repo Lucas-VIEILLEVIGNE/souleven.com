@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="/css/contact-style.css">
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+
 <body class="dark-mode">
     <header>
         <nav class="navbar" role="navigation">
             <div class="nav-logo">
-                    <a href="index.html"><img class="logo" src="/Sources/Illustration_sans_titre.png" alt="Logo Lucas Vieillevigne représenté en dessin qui dessine sur une tablette graphique"></a>
-            </div>          
+                <a href="index.html"><img class="logo" src="/Sources/Illustration_sans_titre.png" alt="Logo Lucas Vieillevigne représenté en dessin qui dessine sur une tablette graphique"></a>
+            </div>           
             <ul class="navbar-links">
                 <li class="navbar-link first lien"><a href="explore.html">EXPLORE</a></li>
                 <li class="navbar-link second lien"><a href="portfolio.html">PORTFOLIO</a></li>
@@ -24,6 +27,7 @@
                 <li class="navbar-link fourth lien"><a href="contact.html">CONTACT</a></li>
                 <li class="navbar-link fifth rsx"><a href="https://www.instagram.com/souleven_/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
                 <li class="navbar-link six rsx"><a href="https://www.linkedin.com/in/lucas-vieillevigne/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="navbar-link seven rsx"><div class="dark-btn"></div></li>
             </ul>
 
             <button class="burger">
@@ -31,7 +35,7 @@
             </button>
         </nav>        
     </header>
-    
+
     <div class="box">
         <div class="left">
                 <div class="h1-left">
@@ -59,11 +63,11 @@
                             <label>Nom</label>
                         </div>
                     </div>
-                    <div class="email"><input type="email" name="email" class="email" required><label>Email</label>
+                    <div class="email"><input type="email" name="email" class="email-send" required=""><label>Email</label>
                     </div>
-                    <div class="phone"><input type="tel"name="phone" placeholder="Téléphone (optionnel)" />
+                    <div class="phone"><input type="tel"name="phone" class="tel" placeholder="Téléphone (optionnel)" />
                     </div>
-                    <div class="message"><textarea name="message" placeholder="Votre Message" class="message" required></textarea><label></label>
+                    <div class="message"><textarea name="message" placeholder="Votre Message" class="msg" required=""></textarea><label></label>
                     </div>
                     <div class="btn-contact">
                         <input type="submit" name="button" value="Envoyer" class="send-btn">

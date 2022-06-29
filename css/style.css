@@ -63,21 +63,34 @@ body.dark-mode{
       position: relative;
       font-size: 10vh;
       padding: 0.3em 0em 1em 0em;
-      top: 3.5em;
+      top: 2em;
       width: 10em;
       height: 1em;
       box-shadow: 0px 7px 20px black;
   }   
+
+  .main-page{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
   
+ footer{
+    display: flex;
+    justify-content: center; 
+ }
 
+ footer a{
+    padding-left: 20px;
+ }
 
+ 
 
 
 
 
 
 /* NAV-BAR */
-
 
 .fa-brands{
     color: var(--main-color);
@@ -95,7 +108,7 @@ ul {
     border-radius: 50%;
     background-color: var(--main-color);
     cursor: pointer;
-    transition: all .4 ease-in-out;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.2s;
 }
 
 .dark-btn:hover{
@@ -117,6 +130,9 @@ ul {
 
 
 /* Navbar */
+header{
+    height: 25vh;
+}
 .navbar {
     text-align: center;
     justify-content: space-between;
@@ -155,10 +171,15 @@ ul {
 
     .main-content h1{
         font-size: 40px;
-        top: 7em;
+        top: 5em;
 
     }   
 
+    footer a{
+        position: absolute;
+        left: 101vh;
+        transition: all .4s ease-in-out;
+    }
     
     .navbar-links {
         display: flex;

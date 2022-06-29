@@ -5,16 +5,16 @@ function validate()
     let subject = document.querySelector('.subject')
     let name = document.querySelector('.name');
     let lastName = document.querySelector('.lastName');
-    let email = document.querySelector('.email');
-    let phone = document.querySelector('.phone');
-    let msg = document.querySelector('.message');
+    let email = document.querySelector('.email-send');
+    let phone = document.querySelector('.tel');
+    let msg = document.querySelector('.msg');
     let sendBtn = document.querySelector('.send-btn');
 
     sendBtn.addEventListener('click', (e) => {
 
         e.preventDefault();
 
-        if(subject.value == "default" ||name.value == "" || lastName.value == "" || email.value == ""|| phone.value == "" || msg == "")
+        if(subject.value == "default" ||name.value == "" || lastName.value == "" || email.value == ""|| phone.value == "" || msg.value == "")
         {
             emptyerror();
         }
