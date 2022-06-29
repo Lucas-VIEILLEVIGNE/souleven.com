@@ -199,7 +199,7 @@ select,
   font-size: 0.75em;
   box-sizing: border-box;
   width: 100%;
-  height: 10em;
+  height: 29vh;
   border: 3px white solid;
   border-radius: 4px;
   padding: 10px;
@@ -218,6 +218,7 @@ select,
 .box .contact .btn-contact input {
   cursor: pointer;
   position: relative;
+  top: 0.5em;
   background: transparent;
   left: 25vh;
   display: inline-block;
@@ -261,4 +262,30 @@ box-shadow: 0 0 5px #03e9f4,
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  width: 50%;
 }
+
+/* Small Devices */
+@media screen and (max-width:819.98px){
+  .right{
+    display: none;
+  }
+  .box{
+    justify-content: center;
+    width: 50vh;
+    height: 85vh;
+  }
+  .h1-left{
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+    position: relative;
+    left: 0%;
+
+  }
+  .box .contact .prenom input{
+    width: 90%;
+    padding: 10px 0px;
+    font-size: 1em;
+  }
+} 
