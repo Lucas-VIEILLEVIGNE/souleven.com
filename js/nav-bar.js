@@ -1,28 +1,12 @@
 function toggleMenu () 
 {
     const Footer =document.querySelector('.footer')
-    const mainContent =document.querySelector('.main-content');
-    const Contact =document.querySelector('.box');
-    const btn =document.querySelector('.bubbly-button');
     const navbar =document.querySelector('.navbar');
     const burger =document.querySelector('.burger');
     burger.addEventListener('click',() => 
     {
         navbar.classList.toggle('show-nav');
         Footer.classList.toggle('show-nav');
-        if(navbar.classList.contains('show-nav'))
-        {
-            mainContent.style.display='none'
-            btn.style.display='none'
-            Contact.style.display='none'
-        }
-        else
-        {
-            mainContent.style.display='flex'
-            btn.style.display='inline-block'
-            Contact.style.display='flex'
-        }
-        
     })
 }
 toggleMenu();

@@ -18,11 +18,6 @@
     outline: none;
 }
 
-
-body.dark-mode{
-    color: white!important;
-    background-color: #2E2760;
-  }
   
   
   /* Reset */
@@ -42,42 +37,10 @@ body.dark-mode{
   /* Body - Style */
   
   body{
-      font-family: 'League Spartan', sans-serif;
-      background-image: var(--background-img);
+      font-family: 'League Spartan', sans-serif;    
       background-color: var(--main-bg-color);
       background-repeat: no-repeat;
       background-size: cover;
-  }
-  
-  .main-page{
-    height: 75vh;
-  }
-
-  .main-content{
-    padding-top: 20vh;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  }
-  
-  .main-content h1{
-      background-color:var(--main-bg-color);
-      color :  var(--main-color);
-      position: relative;
-      font-size: 10vh;
-      padding: 0.3em 0em 1em 0em;
-      width: 10em;
-      height: 1em;
-      box-shadow: 0px 7px 20px black;
-  }   
-
-    .main-page{
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
   }
   
  footer{
@@ -95,10 +58,115 @@ body.dark-mode{
     color: white;
 }
 
+.main{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color{
+    color: #6253d3;
+}
+
+.main-content{
+    position:relative;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}
+
+.main-img{
+    object-fit: cover;
+    object-position:top ;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-text h4{
+    position:relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.5rem;
+    color: #6253d3;
+}
+
+.main-text h2 {
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
+
+.main-text p{
+    font-size: 0.938rem;
+    margin-bottom: 1.5rem;
+}
 
 
+.about-text{
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
 
 
+.heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #6253d3;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.btn{
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: clamp(12px, 0.75em, 16px);
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: none;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+
+.btn:hover {
+    background: #03e9f4;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+    }
 
 /* NAV-BAR */
 
@@ -152,7 +220,6 @@ header{
     display: flex;
     height: 15vh;
     color: var(--main-color);
-    background: var(--main-bg-color);
     transition: all .7s ease-in-out;
 }
 .navbar-links {
@@ -181,17 +248,45 @@ header{
 /* Small Devices */
 @media screen and (max-width:819.98px) {
 
-    *{
-        overflow: hidden;
+    .main{
+        z-index: -100000;
+        min-height: 400px;
     }
 
-    .main-content h1{
-        font-size: 40px;
+    .heading{
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        color: #6253d3;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        z-index: -1000000;
+    }
+
+    .main-text h2 {
+        font-size: 2.5rem;
+        line-height: 4rem;
         z-index: -100000;
-    }   
-    
-    .bubbly-button{
+    }
+
+    .about-text{
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main img{
         z-index: -10000;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 2vh;
+    }
+
+    *{
+        overflow: hidden;
     }
 
     .footer a{

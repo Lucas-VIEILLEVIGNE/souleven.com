@@ -28,8 +28,6 @@
     display: inline-block;
     font-size: 1em;
     padding: 1em 2em;
-    margin-top: 100px;
-    margin-bottom: 60px;
     -webkit-appearance: none;
     appearance: none;
     background-color: #ff0081;
@@ -38,7 +36,6 @@
     border: none;
     cursor: pointer;
     position: relative;
-    top: 12em;
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
     box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
   }
@@ -123,20 +120,6 @@
 
   @media screen and (max-width:819.98px) {
     .bubbly-button {
-      font-size: 0.7em;
-      padding: 1em 2em;
-      margin-top: 100px;
-      margin-bottom: 60px;
-      -webkit-appearance: none;
-      appearance: none;
-      background-color: #ff0081;
-      color: #fff;
-      border-radius: 150px;
-      border: none;
-      cursor: pointer;
-      position: relative;
-      top: em;
-      transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-      box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+      font-size: 0.75em;
     }
   }

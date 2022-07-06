@@ -15,3 +15,15 @@ var animateButton = function(e) {
   for (var i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', animateButton, false);
   }
+
+
+  var url = document.getElementById('link');
+
+url.addEventListener('click', ()=>{
+    console.log("url clicked...")
+
+    setTimeout(() =>{
+        window.location.href = "explore.html";
+        console.log("timeout executed...")
+    }, 850);
+});
